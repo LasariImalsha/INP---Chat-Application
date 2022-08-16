@@ -11,7 +11,7 @@ public class Server {
 
 
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(10001);
+        ServerSocket serverSocket = new ServerSocket(10002);
         Socket accept;
 
         while (true) {
