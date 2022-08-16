@@ -3,24 +3,40 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="612.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <Label layoutX="119.0" layoutY="57.0" text="Let's Chat">
+      <ImageView fitHeight="612.0" fitWidth="455.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/login.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="24.0" text="Let's Chat" textFill="WHITE">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <ImageView fitHeight="160.0" fitWidth="229.0" layoutX="100.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="97.0" layoutY="357.0" text="Please enter your name to continue" />
-      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="94.0" layoutY="433.0" prefHeight="31.0" prefWidth="244.0" promptText="UserName" />
-      <JFXButton layoutX="163.0" layoutY="512.0" onAction="#btnLoginOnAction" prefHeight="39.0" prefWidth="92.0" style="-fx-background-radius: 20px;" text="LogIn">
+      <ImageView fitHeight="160.0" fitWidth="229.0" layoutX="139.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/chat1.png" />
+         </image></ImageView>
+      <Label layoutX="81.0" layoutY="355.0" text="Please enter your name to continue">
+         <font>
+            <Font name="Gadugi" size="18.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="82.0" layoutY="415.0" prefHeight="49.0" prefWidth="282.0" promptText="UserName" />
+      <JFXButton buttonType="RAISED" layoutX="180.0" layoutY="492.0" onAction="#btnLoginOnAction" prefHeight="39.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #4877a1;" text="LogIn" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
+      <Line endX="351.5" endY="-83.0" layoutX="101.0" layoutY="146.0" startX="-101.0" startY="-3.0" stroke="#143365" strokeWidth="2.0" />
+      <Line endX="96.58578491210938" endY="2.0" layoutX="352.0" layoutY="161.0" startX="-252.41421508789062" startY="-34.0" stroke="#082343" strokeWidth="3.0" />
+      <Line endX="339.878662109375" endY="45.0" layoutX="110.0" layoutY="542.0" startX="-107.00003051757812" stroke="#143365" strokeWidth="3.0" />
    </children>
 </AnchorPane>
