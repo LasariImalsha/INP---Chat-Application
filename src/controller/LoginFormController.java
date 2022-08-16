@@ -18,7 +18,7 @@ public class LoginFormController {
             stage.close();
             Stage stage1 = new Stage();
             stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Client1Form.fxml"))));
-            stage1.setTitle("Online Chat ");
+            stage1.setTitle("Let's Chat ");
             stage1.setResizable(false);
             stage1.centerOnScreen();
             stage1.show();
@@ -27,7 +27,7 @@ public class LoginFormController {
         else if (txtUserName.getText().equals("Server")) {
             Stage stage2 = new Stage();
             stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ServerForm.fxml"))));
-            stage2.setTitle("Online Chat");
+            stage2.setTitle("Let's Chat");
             stage2.setResizable(false);
             stage2.centerOnScreen();
             stage2.show();
