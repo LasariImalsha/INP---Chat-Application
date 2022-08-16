@@ -1,6 +1,6 @@
 package controller;
 
-public class ClientHandler extends Thread {
+public class ClientHandler {
 
 
 }
