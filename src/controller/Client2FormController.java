@@ -97,15 +97,15 @@ public class Client2FormController extends Thread {
 
                     ImageView imageView = new ImageView(image);
 
-                    imageView.setFitWidth(150);
-                    imageView.setFitHeight(200);
+                    imageView.setFitWidth(100);
+                    imageView.setFitHeight(100);
 
                     HBox hBox = new HBox(10);
                     hBox.setAlignment(Pos.BOTTOM_RIGHT);
 
                     if (!command.equalsIgnoreCase(lblUser.getText())) {
-                        vBox.setAlignment(Pos.TOP_RIGHT);
-                        hBox.setAlignment(Pos.CENTER_RIGHT);
+                        vBox.setAlignment(Pos.TOP_LEFT);
+                        hBox.setAlignment(Pos.CENTER_LEFT);
 
                         Text text1 = new Text("  " + command + " :");
                         hBox.getChildren().add(text1);
@@ -132,7 +132,7 @@ public class Client2FormController extends Thread {
                     tempTextFlow.setMaxWidth(200);
 
                     TextFlow textFlow = new TextFlow(tempTextFlow);
-                    HBox hBox = new HBox(12);
+                    HBox hBox = new HBox(10);
 
                     if (!command.equalsIgnoreCase(lblUser.getText() + ":")) {
                         vBox.setAlignment(Pos.TOP_LEFT);
