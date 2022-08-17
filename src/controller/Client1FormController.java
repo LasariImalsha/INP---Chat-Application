@@ -41,7 +41,7 @@ public class Client1FormController extends Thread {
         emojiPane.setVisible(false);
 
         String userName = LoginFormController.userName;
-        lblUser.setText(userName);
+        lblUser.setText("Client1");
 
         try {
             socket = new Socket("localhost", 10002);

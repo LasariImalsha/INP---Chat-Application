@@ -24,9 +24,9 @@ public class LoginFormController {
             stage1.show();
         }
 
-        else if (txtUserName.getText().equals("Server")) {
+        else if (txtUserName.getText().equals("Client2")) {
             Stage stage2 = new Stage();
-            stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ServerForm.fxml"))));
+            stage2.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Client2.fxml"))));
             stage2.setTitle("Let's Chat");
             stage2.setResizable(false);
             stage2.centerOnScreen();
